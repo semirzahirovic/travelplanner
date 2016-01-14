@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/destinationRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/destinationTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/destination"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/destinationTxt"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/white_rounded_button"
+                android:hint="@string/destination_hint"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/destination"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/pickerRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destinationRL"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_rounded_button"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/start_Date"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/startDate"
+                android:layout_weight="1"
+                android:background="@drawable/blue_rounded_button"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/end_date"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickerRl"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/commentTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/comment"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/commentTxt"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/white_rounded_button"
+                android:hint="@string/comment"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/comment"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentRL"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_rounded_button"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

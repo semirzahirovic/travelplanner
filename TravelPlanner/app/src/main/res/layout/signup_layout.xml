@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/firstNameRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/txtfirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/firstname"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="26dp"
+                android:layout_toRightOf="@+id/txtfirstname"
+                android:background="@android:color/transparent"
+                android:hint="@string/firstname"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtfirstname"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lastNameRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNameRL"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+
+            <TextView
+                android:id="@+id/txtlastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lastname"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="26dp"
+                android:layout_toRightOf="@id/txtlastname"
+                android:background="@android:color/transparent"
+                android:hint="@string/lastname"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtlastname"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emailRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastNameRl"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:layout_marginRight="26dp"
+                android:layout_toRightOf="@id/txtemail"
+                android:background="@android:color/transparent"
+                android:hint="@string/email_hint"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtemail"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/usernameRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailRl"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/txtusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Username"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="26dp"
+                android:layout_toRightOf="@id/txtusername"
+                android:background="@android:color/transparent"
+                android:hint="@string/Username_hint"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtusername"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/passwordRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameRl"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/txtpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Password"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="26dp"
+                android:layout_toRightOf="@id/txtpassword"
+                android:background="@android:color/transparent"
+                android:hint="@string/Password_hint"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtpassword"
+                android:layout_marginTop="15dp"
+                android:background="@color/dividerColor" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordRl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_rounded_button"
+            android:text="@string/SignupBtn"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Travel Planner": {
+      "applicationId": "QXCWEno7mibqCvpe0OHP6i5LJeWBroDZ79MTQCO1"
+    },
+    "_default": {
+      "link": "Travel Planner"
+    }
+  }
+}

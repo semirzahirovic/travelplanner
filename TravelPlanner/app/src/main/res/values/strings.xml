@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TravelPlanner</string>
+
+    <string name="title_section1">All future trips</string>
+    <string name="title_section2">Past trips</string>
+    <string name="title_section3">Log out</string>
+    <string name="next_month">Next month trips </string>
+    <string name="active_trips">Active trips </string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="Username">Username<font color="red"> *</font></string>
+    <string name="Username_hint">Username</string>
+    <string name="Password">Password<font color="red"> *</font></string>
+    <string name="Password_hint">Password</string>
+    <string name="email">Email<font color="red"> *</font></string>
+    <string name="email_hint">Email</string>
+    <string name="LoginBtn">Login</string>
+    <string name="SignupBtn">Sign up</string>
+    <string name="save">Save</string>
+    <string name="firstname">First Name</string>
+    <string name="destination">Destination<font color="red">*</font></string>
+    <string name="destination_hint">Destination</string>
+    <string name="lastname">Last Name</string>
+    <string name="comment">Comment</string>
+    <string name="start_Date">Start Date<font color="red"> *</font></string>
+    <string name="end_date">End Date<font color="red"> *</font></string>
+    <string name="login_activity">Login Activity</string>
+    <string name="trip_form">Trip Form</string>
+    <string name="user_profile">User Profile</string>
+    <string name="create_profile">Create profile</string>
+    <string name="departs">Departs:</string>
+    <string name="returns">Returns:</string>
+    <string name="saving_trip">Saving trip..</string>
+    <string name="start_date_cant">Start date can\'t be blank!</string>
+    <string name="end_date_cant_be_blank">End date can\'t be blank!</string>
+    <string name="start_end_date_err">Start date can\'t be after the end date!</string>
+    <string name="dest_blank">Destination can\'t be blank!</string>
+    <string name="loading_past">Loading past trips..</string>
+    <string name="loading_active">Loading active trips..</string>
+    <string name="loading_next_month">Loading next month trips..</string>
+    <string name="loading_future">Loading future trips..</string>
+    <string name="username_blank">Username can\'t be blank</string>
+    <string name="password_blank">Password can\'t be blank</string>
+    <string name="logging_in">Logging in..</string>
+    <string name="email_blank">Email can\'t be blank</string>
+    <string name="email_invalid_format">Email invalid format</string>
+    <string name="signing_in">Signing in...</string>
+    <string name="loading_users">Loading users..</string>
+
+</resources>
